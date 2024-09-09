@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zair A Biography</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            transition: background-color 1s;
+            font-family: Arial, sans-serif; /* Added a default font for better appearance */
+            text-align: center; /* Center-aligns text content for better layout */
+        }
+        h1 {
+            margin-top: 20px; /* Adds some space above the heading */
+        }
+        p {
+            font-size: 1.1em; /* Adjusted font size for better readability */
+            line-height: 1.5; /* Adds spacing between lines for readability */
+            padding: 0 10px; /* Adds some padding to prevent text from touching the edges */
+            max-width: 800px; /* Limits the width of the paragraph for better readability */
+            margin: 20px auto; /* Centers the paragraph and adds margin above and below */
+        }
+    </style>
+</head>
+<body>
+    <h1>Zair A Biography</h1>
+    <p>Oh hi there, my name is Zair Fareed and I'm 12 years old. I live in Banigala, Islamabad, Pakistan. My hobbies are:
+        <ul>
+            <li>Football</li>
+            <li>Eating</li>
+            <li>Playing video games</li>
+            <li>Sketching</li>
+            <li>Some other stuff</li>
+        </ul>
+        I love sketching and playing football with my friends. I better mention them or they will be mad I didn’t let them have their share of being on a website. They are: Haysam, Rayan, Arham, and of course Shaki. I want to be an engineer when I grow up, and I want to live in the US. Why? Because they have Takis, Cheetos, and LOTS of chocolates, and it's clean. I have one brother (Shahab) and one sister (Shafaat). My favorite foods are: Pizza, Chinese food (e.g., sushi), and chocolate éclairs. My favorite subjects in school are: History, Computer Science, and Math. Now I guess you know stuff about me. Soo Bye!...Are you still here?</p>
+
+    <script>
+        function getRandomColor() {
+            const colors = ['red', 'green', 'blue'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = getRandomColor();
+            const randomTime = Math.floor(Math.random() * 20000) + 10000; // Random time between 10-30 seconds
+            setTimeout(changeBackgroundColor, randomTime);
+        }
+
+        changeBackgroundColor();
+    </script>
+</body>
+</html>
+
